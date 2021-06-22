@@ -27,3 +27,5 @@ Singular value decomposition (SVD) is a well-established technique for identifyi
 Earlier systems relied on imputation to fill in missing ratings and make the rating matrix dense 2 .However, imputation can be very expensive as it significantly increases the amount of data. In addition, inaccurate imputation might distort the data considerably.
 
 Hence, more recent works 3−6  suggested modeling directly the observed ratings only, while avoiding overfitting through a regularized model. To learn the factor vectors ( 𝑝𝑢  and  𝑞𝑖 ), the system minimizes the regularized squared error on the set of known ratings:
+
+![alt text](https://github.com/chong915/Recommender-System/blob/main/objective_function.jpg?raw=true)
