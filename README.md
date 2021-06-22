@@ -29,3 +29,14 @@ Earlier systems relied on imputation to fill in missing ratings and make the rat
 Hence, more recent works 3−6  suggested modeling directly the observed ratings only, while avoiding overfitting through a regularized model. To learn the factor vectors ( 𝑝𝑢  and  𝑞𝑖 ), the system minimizes the regularized squared error on the set of known ratings:
 
 ![alt text](https://github.com/chong915/Recommender-System/blob/main/objective_function.png?raw=true)
+
+The system learns the model by fitting the previously observed ratings. However, the goal is to generalize those previous ratings in a way that predicts future, unknown ratings. Thus, the system should avoid overfitting the observed data by regularizing the learned parameters, whose magnitudes are penalized. The constant λ controls the extent of regularization and is usually determined by cross-validation. Ruslan Salakhutdinov and Andriy Mnih’s “Probabilistic Matrix Factorization” 7  offers a probabilistic foundation for regularization.
+
+2. B.M. Sarwar et al., “Application of Dimensionality Reduction in Recommender System—A Case Study,” Proc. KDD Workshop on Web Mining for e-Commerce: Challenges and Opportunities (WebKDD), ACM Press, 2000.
+3. S. Funk, “Netflix Update: Try This at Home,” Dec. 2006; http://sifter.org/~simon/journal/20061211.html.
+4. Y. Koren, “Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model,” Proc. 14th ACM SIGKDD Int’l Conf. Knowledge Discovery and Data Mining, ACM Press, 2008, pp. 426-434.
+5. A. Paterek, “Improving Regularized Singular Value Decomposition for Collaborative Filtering,” Proc. KDD Cup and Workshop, ACM Press, 2007, pp. 39-42.
+6. G. Takács et al., “Major Components of the Gravity Recommendation System,” SIGKDD Explorations, vol. 9, 2007, pp. 80-84.
+7. R. Salakhutdinov and A. Mnih, “Probabilistic Matrix Factorization,” Proc. Advances in Neural Information Processing Systems 20 (NIPS 07), ACM Press, 2008, pp. 1257-1264.
+
+![alt text](https://github.com/chong915/Recommender-System/blob/main/github.png?raw=true)
