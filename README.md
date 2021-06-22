@@ -8,12 +8,13 @@ The attributes of the dataset are as follows :
 1.	**userId** : Every user identified with a unique id (Structured)
 2.	**steam_game** : Every game is identified with a unique name (Unstructured)
 3.	**hours_played** : Number of Hours played for a game(Structured)
-The Approach Used (Latent factor models/Matrix Factorization)
+
+# The Approach Used (Latent factor models/Matrix Factorization)
 Latent factor model is an approach that tries to explain the ratings by characterizing both items and users on, say, 20 to 100 factors inferred from the ratings patterns(Number of gaming hours for games in this case). For movies, the discovered factors might measure obvious dimensions such as comedy versus drama, amount of action, or orientation to children; less well-defined dimensions such as depth of character development or quirkiness; or completely uninterpretable dimensions. For games, the discovered factors might be the genres of the games such as adventure, MMORPG, action and strategy-based. For users, each factor measures how much the user likes games that score high on the corresponding movie factor.
 
 Reference : https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf
 
-Matrix Factorization Methods
+# Matrix Factorization Methods
 In its basic form, matrix factorization characterizes both items and users by vectors of factors inferred from item rating patterns.
 
 High correspondence between item and user factors leads to a vector  𝑞𝑖  for  𝑖𝑡ℎ  item, and each user u is associated with a vector  𝑝𝑢 . For a given item i, the elements of  𝑞𝑖  measure the extent to which the item possesses those latent factors. For a given user u, the elements of  𝑝𝑢  measure the extent of interest the user has in items that are high on the corresponding latent factors.
